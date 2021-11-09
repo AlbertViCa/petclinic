@@ -36,6 +36,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:AlbertViCa/petclinic.git</developerConnection>
+		<connection>scm:git:git@github.com:AlbertViCa/petclinic.git</connection>
 		<tag>sfg-pet-clinic-0.0.1</tag>
 	</scm>
 </project>

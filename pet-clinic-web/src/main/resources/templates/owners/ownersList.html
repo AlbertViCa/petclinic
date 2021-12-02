@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<html xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 
 <body>
@@ -17,7 +19,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr th:each="owner : ${listOwners}">
+  <tr th:each="owner : ${selections}">
     <td>
       <a th:href="@{/owners/__${owner.id}__}" th:text="${owner.firstName + ' ' + owner.lastName}"/></a>
     </td>
